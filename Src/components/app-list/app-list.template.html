@@ -1,0 +1,45 @@
+<table class="list">
+    <caption class="list__caption">Players List</caption>
+    <thead>
+        <tr>
+            <th ng-repeat="title in $ctrl.listTitles"
+                class="list__title">
+                {{title}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="player in $ctrl.players" class="list__row">
+            <td class="list__col">
+                {{player.id}}
+            </td>
+            <td class="list__col">
+                {{player.name}}
+            </td>
+            <td class="list__col">
+                {{player.battles_total}}
+            </td>
+            <td class="list__col">
+                {{player.wins_total}}
+            </td>
+            <td class="list__col">
+                {{player.days_total}}
+            </td>
+            <td class="list__col">
+                {{player.vehicles_x}}
+            </td>
+            <td class="list__col">
+                {{player.rating}}
+            </td>
+            <td class="list__col">
+                {{player.exp_avg}}
+            </td>
+            <td class="list__col">
+                {{player.exp_total}}
+            </td>
+            <td class="list__col">
+                {{player.created_at}}
+            </td>
+        </tr>
+    </tbody>
+</table>

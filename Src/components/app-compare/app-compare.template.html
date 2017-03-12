@@ -1,0 +1,131 @@
+<div class="compare">
+    <div class="compare__block">
+        <label>
+            Enter Players Id
+        </label>
+
+        <input type="button"
+               value="Compare"
+               ng-click="$ctrl.compare()">
+    </div>
+    <div class="compare__block">
+        <label for="player1">
+            Player 1
+        </label>
+        <input type="text"
+               id="player1"
+               ng-model="$ctrl.player1">
+
+        <label for="player2">
+            Player 2
+        </label>
+        <input type="text"
+               id="player2"
+               ng-model="$ctrl.player2">
+    </div>
+
+    <table ng-if="$ctrl.showCompareTable" class="compare__table">
+        <tr class="compare__table-row">
+            <td>
+                Player:
+            </td>
+            <td>
+                {{$ctrl.compared_player1.name}}
+            </td>
+            <td>
+                {{$ctrl.compared_player2.name}}
+            </td>
+        </tr>
+        <tr class="compare__table-row">
+            <td>
+                Battles total
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player1.battles_total,
+                                               $ctrl.compared_player2.battles_total)">
+                {{$ctrl.compared_player1.battles_total}}
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player2.battles_total,
+                                               $ctrl.compared_player1.battles_total)">
+                {{$ctrl.compared_player2.battles_total}}
+            </td>
+        </tr>
+        <tr class="compare__table-row">
+            <td>
+                Wins total
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player1.wins_total,
+                                               $ctrl.compared_player2.wins_total)">
+                {{$ctrl.compared_player1.wins_total}}
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player2.wins_total,
+                                               $ctrl.compared_player1.wins_total)">
+                {{$ctrl.compared_player2.wins_total}}
+            </td>
+        </tr>
+        <tr class="compare__table-row">
+            <td>
+                Days total
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player1.days_total,
+                                               $ctrl.compared_player2.days_total)">
+                {{$ctrl.compared_player1.days_total}}
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player2.days_total,
+                                               $ctrl.compared_player1.days_total)">
+                {{$ctrl.compared_player2.days_total}}
+            </td>
+        </tr>
+        <tr class="compare__table-row">
+            <td>
+                Rating
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player1.rating,
+                                               $ctrl.compared_player2.rating)">
+                {{$ctrl.compared_player1.rating}}
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player2.rating,
+                                               $ctrl.compared_player1.rating)">
+                {{$ctrl.compared_player2.rating}}
+            </td>
+        </tr>
+        <tr class="compare__table-row">
+            <td>
+                Vehicles
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player1.vehicles_x,
+                                               $ctrl.compared_player2.vehicles_x)">
+                {{$ctrl.compared_player1.vehicles_x}}
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player2.vehicles_x,
+                                               $ctrl.compared_player1.vehicles_x)">
+                {{$ctrl.compared_player2.vehicles_x}}
+            </td>
+        </tr>
+        <tr class="compare__table-row">
+            <td>
+                Exp avg
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player1.exp_avg,
+                                               $ctrl.compared_player2.exp_avg)">
+                {{$ctrl.compared_player1.exp_avg}}
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player2.exp_avg,
+                                               $ctrl.compared_player1.exp_avg)">
+                {{$ctrl.compared_player2.exp_avg}}
+            </td>
+        </tr>
+        <tr class="compare__table-row">
+            <td>
+                Exp total
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player1.exp_total,
+                                               $ctrl.compared_player2.exp_total)">
+                {{$ctrl.compared_player1.exp_total}}
+            </td>
+            <td ng-class="$ctrl.playersCompare($ctrl.compared_player2.exp_total,
+                                               $ctrl.compared_player1.exp_total)">
+                {{$ctrl.compared_player2.exp_total}}
+            </td>
+        </tr>
+    </table>
+</div>

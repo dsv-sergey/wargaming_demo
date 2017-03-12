@@ -1,0 +1,23 @@
+.compare {
+  &__block {
+    margin-bottom: 20px;
+  }
+
+  &__table {
+    width: 50%;
+  }
+
+  &__table-row {
+    height: 30px;
+  }
+
+  .validation-under {
+    background: red;
+  }
+  .validation-above {
+    background: green;
+  }
+  .validation-even {
+    background: orange;
+  }
+}

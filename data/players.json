@@ -1,0 +1,69 @@
+{
+  "players": [
+    {
+      "id": "01001",
+      "name": "Ivan",
+      "battles_total": 191,
+      "wins_total": 14,
+      "days_total": 222,
+      "vehicles_x": 11,
+      "rating": 61,
+      "exp_avg": 61,
+      "exp_total": 71,
+      "is_hidden": false,
+      "created_at": "01/01/2000"
+    },
+    {
+      "id": "01002",
+      "name": "Petr",
+      "battles_total": 882,
+      "wins_total": 256,
+      "days_total": 222,
+      "vehicles_x": 255,
+      "rating": 27,
+      "exp_avg": 62,
+      "exp_total": 72,
+      "is_hidden": false,
+      "created_at": "01/01/2000"
+    },
+    {
+      "id": "01003",
+      "name": "Fedor",
+      "battles_total": 56,
+      "wins_total": 3557,
+      "days_total": 222,
+      "vehicles_x": 34,
+      "rating": 113,
+      "exp_avg": 355,
+      "exp_total": 36,
+      "is_hidden": false,
+      "created_at": "01/01/2000"
+    },
+    {
+      "id": "01004",
+      "name": "Nikolai",
+      "battles_total": 2,
+      "wins_total": 12,
+      "days_total": 222,
+      "vehicles_x": 23,
+      "rating": 2771,
+      "exp_avg": 12,
+      "exp_total": 82,
+      "is_hidden": false,
+      "created_at": "01/01/2000"
+    },
+    {
+      "id": "01005",
+      "name": "Evgeny",
+      "battles_total": 3,
+      "wins_total": 43,
+      "days_total": 222,
+      "vehicles_x": 37,
+      "rating": 39,
+      "exp_avg": 3,
+      "exp_total": 3,
+      "is_hidden": false,
+      "created_at": "01/01/2000"
+    }
+  ]
+}
